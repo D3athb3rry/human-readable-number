@@ -7,6 +7,5 @@ module.exports = function toReadable (n) {
         if (n < 1000) return num[~~(n/100)] +" hundred" + (n%100 == 0? "": " " + toReadable(n%100));
         return toReadable(~~(n/1000)) + " thousand" + (n%1000 != 0? " " + toReadable(n%1000): "");
 }
-console.log(toReadable(32));
 
 
